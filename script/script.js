@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var player=1;
 var score1=0;
 var score2=0;
@@ -157,7 +156,6 @@ function finishGame(){
         document.getElementById("gameover").innerHTML="Hui!";
     }*/
 }
-=======
 var player=1;
 var score1=0;
 var score2=0;    
@@ -289,26 +287,3 @@ function updateScore() {
         document.getElementById('score2').innerHTML="Score : "+score2;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> refs/remotes/origin/master
