@@ -5,10 +5,17 @@
     <title>PEXESO</title>
     <link type="text/css" href="style/style.css" rel="stylesheet">
     <script src="script/script.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   </head>
 
-  <body align="center">
-      <div id="gameboard">
+  <body align="center" class="row">
+	  <div id="player1" class="col-md-3">
+	  player1<br>
+		score: 0
+		 
+	  </div>
+      <div id="gameboard" class="col-md-6">
         <table width="640px">
             <tr> <!-- 1. row -->
                 <td> <img src="img/pexeso_logo.jpeg" class="card" id="img00" onclick="clickImg(00)"> </td>
@@ -35,6 +42,10 @@
                 <td> <img src="img/pexeso_logo.jpeg" class="card" id="img33" onclick="clickImg(33)"> </td>
             </tr>
         </table>
-      </div>                      
+      </div>
+	  <div id="player2" class="col-md-3">
+	  player2<br>
+		score: 0
+	  </div>
   </body>
 </html>
