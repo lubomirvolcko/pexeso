@@ -4,49 +4,61 @@
     <meta charset="utf-8">
     <title>PEXESO</title>
     <link type="text/css" href="style/style.css" rel="stylesheet">
-    <script src="script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script/script.js" href="script/script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
 
-  <body align="center" class="row">
-      <div class="col-md-3">
-          <div class="playersname">PLAYER 1</div>
-          <div class="score" id="score1">Score : 0</div>
+  <body id="body" class="row">
+      <div id="player1" class="col-md-3 text-left">
+          <div class="playersname status">PLAYER 1</div>
+          <div class="score status" id="score1">Score : 0</div>
           <div><table id="tableP1"></table></div>
       </div>
             
-      <div id="gameboard" class="col-md-6">
+      <div id="gameboard" class="col-md-6 cards">
         <table width="640px">
             <tr> <!-- 1. row -->
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img00" onclick="clickImg(00)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img01" onclick="clickImg(01)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img02" onclick="clickImg(02)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img03" onclick="clickImg(03)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img00" onclick="clickImg(00)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img01" onclick="clickImg(01)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img02" onclick="clickImg(02)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img03" onclick="clickImg(03)"> </td>
             </tr>  
             <tr> <!-- 2. row -->
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img10" onclick="clickImg(10)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img11" onclick="clickImg(11)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img12" onclick="clickImg(12)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img13" onclick="clickImg(13)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img10" onclick="clickImg(10)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img11" onclick="clickImg(11)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img12" onclick="clickImg(12)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img13" onclick="clickImg(13)"> </td>
             </tr>
             <tr> <!-- 3. row -->
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img20" onclick="clickImg(20)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img21" onclick="clickImg(21)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img22" onclick="clickImg(22)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img23" onclick="clickImg(23)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img20" onclick="clickImg(20)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img21" onclick="clickImg(21)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img22" onclick="clickImg(22)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img23" onclick="clickImg(23)"> </td>
             </tr>
             <tr> <!-- 4. row -->
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img30" onclick="clickImg(30)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img31" onclick="clickImg(31)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img32" onclick="clickImg(32)"> </td>
-                <td> <img src="img/pexeso_logo.jpeg" class="card" id="img33" onclick="clickImg(33)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img30" onclick="clickImg(30)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img31" onclick="clickImg(31)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img32" onclick="clickImg(32)"> </td>
+                <td> <img src="img/pexeso_logo.png" class="card" id="img33" onclick="clickImg(33)"> </td>
             </tr>
         </table>
       </div> 
-      <div class="col-md-3">
-          <div class="playersname">PLAYER 2</div>
-          <div class="score" id="score2">Score : 0</div>
+      
+      <div id="player2" class="col-md-3  text-right">
+          <div class="playersname status">PLAYER 2</div>
+          <div class="score status" id="score2">Score : 0</div>
           <div><table id="tableP2"></table></div>
       </div>
+      
+      <div id="restartGame" class="col-md-2 justify-content-center">          
+            <div id="btn">Restart Game</div>
+            <div id="btn_menu">
+              <div id="btnRestart">Restart</div>
+               <div id="btnCancel">Cancel</div>            
+            </div>
+      </div>
+      
+	  <div id="visited" class="col-md-12 text-right" onload="">Number of visitors:</div>
   </body>
 </html>
