@@ -60,7 +60,7 @@ table {
 }
 
 #body {
-    background-color: #98b1b5;
+    background: linear-gradient(#507277, #d8eef2);
 }
 
 .card {

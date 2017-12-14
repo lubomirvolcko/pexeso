@@ -53,7 +53,7 @@ function clickImg(value) {
 }
 
 $(document).ready(function(){
-    $("#player1").css("color", "green"); 
+    $("#player1").css("color", "lightgreen"); 
     $("#player1").css("opacity", "1");
 });
     
@@ -81,13 +81,13 @@ function chceckSelectedCards() {
         setTimeout(turnBack,2000);
         player=player==1?2:1; //zmena hraca na opacneho
         if(player==1){
-            $("#player1").css("color", "green"); 
+            $("#player1").css("color", "lightgreen"); 
             $("#player1").css("opacity", "1");
             $("#player2").css("color", "aliceblue");
             $("#player2").css("opacity", "0.3"); 
         }
         else{
-            $("#player2").css("color", "green"); 
+            $("#player2").css("color", "lightgreen"); 
             $("#player2").css("opacity", "1");
             $("#player1").css("color", "aliceblue");
             $("#player1").css("opacity", "0.3"); 
@@ -174,7 +174,7 @@ $( "document" ).ready(function() {
 	{
     	// Sorry! No Web Storage support..
 	}
-    
+        
     $("#btn_menu").hide();
     
     $("#btn").click(function(){
